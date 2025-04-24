@@ -1,0 +1,28 @@
+[build-system]
+    requires = ["poetry-core"]
+    build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "simple-iCloud"
+version = "0.0.0"
+description = "SimpleiCloud is a lightweight iCloud client for Python, currently focused exclusively on managing contacts."
+authors = [
+    {name = "Luca Ferreri"},
+]
+package-mode = true
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    ]
+requires-python = ">=3.12,<4"
+readme = "README.md"
+license = "Apache"
+license-files = ["LICENSE"]
+
+dependencies =[
+    "requests (>=2.32.3,<3.0.0)",
+    "uuid (>=1.30,<2.0)",
+    "vobject (>=0.9.9,<0.10.0)",
+    "lxml (>=5.4.0,<6.0.0)"
+]
