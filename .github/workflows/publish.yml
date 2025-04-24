@@ -1,4 +1,4 @@
-name: Publish Python 🐍📦 to PyPI
+name: Publish Python to PyPI
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   build-and-publish:
     name: Build and publish to PyPI
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
