@@ -17,7 +17,7 @@ simpleicloudservice = SimpleICloudService(
     password="secret_P422sword,
 )
 ```
-### Get a contact
+### Get a contact 
 ```python
 contact = simpleicloudservice.get_contact("F4ZZZZ0-EZZ7-4ZZD-8ZZE-C4FZZZZZZACD")
 ```
