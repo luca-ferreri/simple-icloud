@@ -25,6 +25,10 @@ jobs:
       - name: Install build dependencies
         run: |
           poetry install
+      
+      - name: Config Poetry
+        run: |
+          poetry config repositories.test-pypi https://test.pypi.org/legacy/
 
       - name: Build the package
         run: poetry publish --build -r test-pypi
