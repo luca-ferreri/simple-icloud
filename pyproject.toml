@@ -4,7 +4,6 @@
 
 [project]
 name = "simple-iCloud"
-version = "0.0.0"
 description = "SimpleiCloud is a lightweight iCloud client for Python, currently focused exclusively on managing contacts."
 authors = [
     {name = "Luca Ferreri"},
@@ -27,6 +26,9 @@ dependencies =[
     "vobject (>=0.9.9,<0.10.0)",
     "lxml (>=5.4.0,<6.0.0)"
 ]
+
+[tool.poetry]
+   version = '0.0.0'
 
 [tool.poetry-dynamic-versioning]
     enable = true
