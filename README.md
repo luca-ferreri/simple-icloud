@@ -10,8 +10,15 @@ This module is under active development, and we welcome contributions from the c
 
 ## Examples
 You must use an app-specific password for iCloud (generate it at <https://appleid.apple.com/> > Sign-In & Security > App-Specific Passwords)
-### Class instantiating
+### Package Installation
 ```python
+pip install simple-icloud
+```
+
+### Class Instantiating
+```python
+from simple_icloud import SimpleICloudService
+
 simpleicloudservice = SimpleICloudService(
     username="user@domain.com",
     password="secret_P422sword,
