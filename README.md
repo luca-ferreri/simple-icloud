@@ -57,7 +57,7 @@ v.add("uid").value = uuid_
 ```
 #### create the contact in iCloud
 ```python
-simpleicloudservice.create_contact(vcard=vv)
+simpleicloudservice.create_contact(vcard=v)
 ```
 ### Update a contact
 #### edit the contact's feature
