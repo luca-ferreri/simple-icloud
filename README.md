@@ -15,13 +15,13 @@ You must use an app-specific password for iCloud (generate it at <https://applei
 pip install simple-icloud
 ```
 
-### Class Instantiating
+### Class Instantiation
 ```python
 from simple_icloud import SimpleICloudService
 
 simpleicloudservice = SimpleICloudService(
     username="user@domain.com",
-    password="secret_P422sword,
+    password="secret_P422sword",
 )
 ```
 ### Get a contact 
@@ -50,7 +50,7 @@ phone = v.add("tel")
 phone.value = phone_
 phone.type_param = "CELL"
 email = v.add("email")
-email.value = "pippo.depippis@xyz.abc
+email.value = "pippo.depippis@xyz.abc"
 email.type_param = ["INTERNET", "HOME", "pref"]
 uuid_ = str(uuid.uuid4())
 v.add("uid").value = uuid_
