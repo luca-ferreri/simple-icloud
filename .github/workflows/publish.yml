@@ -31,7 +31,7 @@ jobs:
       - name: Build the package
         run: poetry build
 
-      - name: Publish to TestPyPI with Trusted Publisher
+      - name: Publish to PyPI with Trusted Publisher
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          repository-url: https://test.pypi.org/legacy/
+          repository-url: https://pypi.org/
