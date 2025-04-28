@@ -63,4 +63,3 @@ email.type_param = ["INTERNET", "HOME", "pref"]
 ```python
 simpleicloudservice.update_contact(v)
 ```
-
