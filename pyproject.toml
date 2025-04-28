@@ -1,6 +1,6 @@
 [build-system]
-    requires = ["poetry-core"]
-    build-backend = "poetry.core.masonry.api"
+    requires = ["poetry-core>=2.0.0,<3.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+    build-backend = "poetry_dynamic_versioning.backend"
 
 [project]
 name = "simple-iCloud"
@@ -9,6 +9,7 @@ description = "SimpleiCloud is a lightweight iCloud client for Python, currently
 authors = [
     {name = "Luca Ferreri"},
 ]
+dynamic = ["version"]
 package-mode = true
 
 classifiers = [
@@ -26,3 +27,9 @@ dependencies =[
     "vobject (>=0.9.9,<0.10.0)",
     "lxml (>=5.4.0,<6.0.0)"
 ]
+
+[tool.poetry-dynamic-versioning]
+    enable = true
+    vcs="git"
+    dirty=true
+    style="pep440"
