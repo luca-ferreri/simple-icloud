@@ -35,3 +35,6 @@ dependencies =[
     vcs="git"
     dirty=true
     style="pep440"
+
+[project.urls]
+    repository = "https://github.com/luca-ferreri/simple-icloud"
